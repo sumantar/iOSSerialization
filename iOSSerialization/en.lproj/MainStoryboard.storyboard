@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzU-0s-fwl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="aPM-sr-Jv6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Serialize Array">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSerialize:" destination="2" eventType="touchUpInside" id="bhc-t6-VmB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-Um-oJw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="x5p-4U-mSX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deserialize Array">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDeSerialize:" destination="2" eventType="touchUpInside" id="c2t-HV-vbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-Op-sjZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2fI-RR-SQn"/>
+                                    <constraint firstAttribute="width" constant="115" id="vrd-pp-efz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Serialize Object">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSerializeObject:" destination="2" eventType="touchUpInside" id="hAn-su-ISd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-4s-lQD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="r2b-Ww-ruo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deserialize Object">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDeSerializeObject:" destination="2" eventType="touchUpInside" id="uaM-vf-J7u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DzU-0s-fwl" firstAttribute="top" secondItem="5" secondAttribute="top" constant="478" id="IUr-Ue-90F"/>
+                            <constraint firstItem="Yb0-Op-sjZ" firstAttribute="trailing" secondItem="DzU-0s-fwl" secondAttribute="trailing" type="default" id="LFK-PU-FOL"/>
+                            <constraint firstItem="EGg-4s-lQD" firstAttribute="bottom" secondItem="Yb0-Op-sjZ" secondAttribute="bottom" type="default" id="PGL-UI-adD"/>
+                            <constraint firstItem="Yb0-Op-sjZ" firstAttribute="leading" secondItem="DzU-0s-fwl" secondAttribute="leading" type="default" id="U70-cT-FJX"/>
+                            <constraint firstItem="hgb-Um-oJw" firstAttribute="baseline" secondItem="DzU-0s-fwl" secondAttribute="baseline" type="default" id="Xe7-kY-onW"/>
+                            <constraint firstItem="EGg-4s-lQD" firstAttribute="leading" secondItem="hgb-Um-oJw" secondAttribute="leading" type="default" id="XuT-AH-6v9"/>
+                            <constraint firstItem="EGg-4s-lQD" firstAttribute="top" secondItem="Yb0-Op-sjZ" secondAttribute="top" type="default" id="ZeL-RL-HvO"/>
+                            <constraint firstItem="Yb0-Op-sjZ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="317" id="cmQ-kS-m9M"/>
+                            <constraint firstItem="Yb0-Op-sjZ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="200" id="dDe-as-IGa"/>
+                            <constraint firstAttribute="trailing" secondItem="hgb-Um-oJw" secondAttribute="trailing" constant="199" id="f1B-08-aTj"/>
+                            <constraint firstItem="EGg-4s-lQD" firstAttribute="baseline" secondItem="Yb0-Op-sjZ" secondAttribute="baseline" type="default" id="frh-y9-T2S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onDeSerialize:"/>
+                <relationship kind="action" name="onDeSerializeObject:"/>
+                <relationship kind="action" name="onSerialize:"/>
+                <relationship kind="action" name="onSerializeObject:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
